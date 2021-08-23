@@ -10,6 +10,7 @@ import javax.persistence.*;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@DiscriminatorValue(value = "customer")
 public class Customer extends Users{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

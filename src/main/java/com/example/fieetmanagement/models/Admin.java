@@ -8,18 +8,12 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
-@DiscriminatorValue(value = "customer")
-public class Customer extends Users{
+@AllArgsConstructor
+@DiscriminatorValue(value = "admin")
+public class Admin extends Users{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "customer_id", nullable = false)
+    @Column(name = "admin_id", nullable = false)
     private Long id;
-    @OneToOne
-    private Branch branch;
-    @OneToOne
-    private Vehicle vehicle;
-    @OneToOne
-    private Manager manager;
 }

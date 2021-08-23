@@ -12,6 +12,7 @@ import java.sql.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@DiscriminatorValue(value = "manager")
 public class Manager extends Users{
 
     @Id

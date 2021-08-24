@@ -812,34 +812,13 @@ sequence|table|16536|16538|1
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
     </database>
-    <role id="4" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
-    </role>
-    <role id="5" parent="1" name="pg_monitor">
-      <ObjectId>3373</ObjectId>
-      <RoleGrants>3374
-3375
-3377</RoleGrants>
-    </role>
-    <role id="6" parent="1" name="pg_read_all_settings">
-      <ObjectId>3374</ObjectId>
-    </role>
-    <role id="7" parent="1" name="pg_read_all_stats">
-      <ObjectId>3375</ObjectId>
-    </role>
-    <role id="8" parent="1" name="pg_read_server_files">
-      <ObjectId>4569</ObjectId>
-    </role>
-    <role id="9" parent="1" name="pg_signal_backend">
+    <role id="4" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="10" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
+    <role id="5" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
     </role>
-    <role id="11" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
-    </role>
-    <role id="12" parent="1" name="postgres">
+    <role id="6" parent="1" name="postgres">
       <ObjectId>10</ObjectId>
       <CreateDb>1</CreateDb>
       <CreateRole>1</CreateRole>
@@ -847,6 +826,27 @@ sequence|table|16536|16538|1
       <SuperRole>1</SuperRole>
       <Replication>1</Replication>
       <BypassRls>1</BypassRls>
+    </role>
+    <role id="7" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="8" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="11" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
     </role>
     <tablespace id="13" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
@@ -858,10 +858,13 @@ sequence|table|16536|16538|1
       <Owner>postgres</Owner>
       <StateNumber>1</StateNumber>
     </tablespace>
-    <schema id="15" parent="2" name="information_schema">
-      <ObjectId>13423</ObjectId>
-      <StateNumber>293</StateNumber>
+    <schema id="15" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
+      <IntrospectionStateNumber>617</IntrospectionStateNumber>
+      <Current>1</Current>
     </schema>
     <schema id="16" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
@@ -869,13 +872,10 @@ sequence|table|16536|16538|1
       <StateNumber>286</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="17" parent="2" name="public">
-      <ObjectId>2200</ObjectId>
-      <Comment>standard public schema</Comment>
-      <StateNumber>287</StateNumber>
+    <schema id="17" parent="2" name="information_schema">
+      <ObjectId>13423</ObjectId>
+      <StateNumber>293</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>617</IntrospectionStateNumber>
-      <Current>1</Current>
     </schema>
     <extension id="18" parent="2" name="plpgsql">
       <ObjectId>13693</ObjectId>
@@ -919,13 +919,13 @@ sequence|table|16536|16538|1
       <ValidatorName>fmgr_sql_validator</ValidatorName>
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
-    <access-method id="23" parent="2" name="brin">
-      <ObjectId>3580</ObjectId>
-      <Comment>block range index (BRIN) access method</Comment>
+    <access-method id="23" parent="2" name="heap">
+      <ObjectId>2</ObjectId>
+      <Comment>heap table access method</Comment>
       <StateNumber>1</StateNumber>
-      <Type>index</Type>
-      <Handler>pg_catalog.brinhandler</Handler>
-      <HandlerId>335</HandlerId>
+      <Type>table</Type>
+      <Handler>pg_catalog.heap_tableam_handler</Handler>
+      <HandlerId>3</HandlerId>
     </access-method>
     <access-method id="24" parent="2" name="btree">
       <ObjectId>403</ObjectId>
@@ -935,13 +935,13 @@ sequence|table|16536|16538|1
       <Handler>pg_catalog.bthandler</Handler>
       <HandlerId>330</HandlerId>
     </access-method>
-    <access-method id="25" parent="2" name="gin">
-      <ObjectId>2742</ObjectId>
-      <Comment>GIN index access method</Comment>
+    <access-method id="25" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
       <StateNumber>1</StateNumber>
       <Type>index</Type>
-      <Handler>pg_catalog.ginhandler</Handler>
-      <HandlerId>333</HandlerId>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
     </access-method>
     <access-method id="26" parent="2" name="gist">
       <ObjectId>783</ObjectId>
@@ -951,23 +951,15 @@ sequence|table|16536|16538|1
       <Handler>pg_catalog.gisthandler</Handler>
       <HandlerId>332</HandlerId>
     </access-method>
-    <access-method id="27" parent="2" name="hash">
-      <ObjectId>405</ObjectId>
-      <Comment>hash index access method</Comment>
+    <access-method id="27" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
       <StateNumber>1</StateNumber>
       <Type>index</Type>
-      <Handler>pg_catalog.hashhandler</Handler>
-      <HandlerId>331</HandlerId>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
     </access-method>
-    <access-method id="28" parent="2" name="heap">
-      <ObjectId>2</ObjectId>
-      <Comment>heap table access method</Comment>
-      <StateNumber>1</StateNumber>
-      <Type>table</Type>
-      <Handler>pg_catalog.heap_tableam_handler</Handler>
-      <HandlerId>3</HandlerId>
-    </access-method>
-    <access-method id="29" parent="2" name="spgist">
+    <access-method id="28" parent="2" name="spgist">
       <ObjectId>4000</ObjectId>
       <Comment>SP-GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -975,37 +967,45 @@ sequence|table|16536|16538|1
       <Handler>pg_catalog.spghandler</Handler>
       <HandlerId>334</HandlerId>
     </access-method>
-    <sequence id="30" parent="17" name="branch_branch_id_seq">
+    <access-method id="29" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Type>index</Type>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+    </access-method>
+    <sequence id="30" parent="15" name="branch_branch_id_seq">
       <ObjectId>16517</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>593</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="31" parent="17" name="users_user_id_seq">
+    <sequence id="31" parent="15" name="users_user_id_seq">
       <ObjectId>16525</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>594</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="32" parent="17" name="vehicle_vehicle_id_seq">
+    <sequence id="32" parent="15" name="vehicle_vehicle_id_seq">
       <ObjectId>16536</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>595</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="33" parent="17" name="branch">
+    <table id="33" parent="15" name="branch">
       <ObjectId>16519</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>596</StateNumber>
       <AccessMethodId>2</AccessMethodId>
     </table>
-    <table id="34" parent="17" name="users">
+    <table id="34" parent="15" name="users">
       <ObjectId>16527</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>596</StateNumber>
       <AccessMethodId>2</AccessMethodId>
     </table>
-    <table id="35" parent="17" name="vehicle">
+    <table id="35" parent="15" name="vehicle">
       <ObjectId>16538</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>599</StateNumber>

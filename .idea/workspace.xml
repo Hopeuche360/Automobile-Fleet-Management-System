@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d03d60-d213-4d32-be11-a6e0d73f051c" name="Changes" comment="">
+
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat.values" afterDir="false" />
@@ -21,13 +22,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="HTML File" />
-        <option value="Class" />
+
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
@@ -52,12 +56,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
+
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -68,16 +67,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunManager">
-    <configuration name="FieetManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Automobile-Fleet-Management-System" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.fieetmanagement.FieetManagementApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,6 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1629582530271</updated>
       <workItem from="1629582533450" duration="257000" />
+
       <workItem from="1629637159987" duration="210000" />
       <workItem from="1629638423296" duration="23168000" />
       <workItem from="1629678117455" duration="3799000" />
@@ -99,8 +90,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+
   </component>
 </project>

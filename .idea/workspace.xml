@@ -5,7 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1d03d60-d213-4d32-be11-a6e0d73f051c" name="Changes" comment="">
-
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/repositories/BranchRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Automobile-Fleet-Management-System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Automobile-Fleet-Management-System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/storage_v2/_src_/database/automobile_fleet_management_system.zHXylg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/588318cd-8591-428c-9c2e-e6cec4d0ae8c/storage_v2/_src_/database/automobile_fleet_management_system.zHXylg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/bootstrap/Dataloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/bootstrap/Dataloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/models/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/models/Branch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/models/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/models/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/models/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/models/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/repositories/AdminLoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/services/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/services/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fieetmanagement/services/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Branch.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Branch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/homePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ManagerDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ManagerDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Vehicles.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Vehicles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adminDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adminDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customerDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customerDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/managerDashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/bootstrap/Dataloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/bootstrap/Dataloader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/models/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/models/Branch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/models/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/models/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/models/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/models/Vehicle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/repositories/AdminLoginRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/services/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/services/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fieetmanagement/services/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/adminDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/adminDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/customerDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/customerDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/managerDashboard.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,7 +91,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -60,7 +106,27 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="FieetManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Automobile-Fleet-Management-System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.fieetmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.fieetmanagement.FieetManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.FieetManagementApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,13 +137,15 @@
       <option name="presentableId" value="Default" />
       <updated>1629582530271</updated>
       <workItem from="1629582533450" duration="257000" />
-
+      <workItem from="1629637159987" duration="210000" />
+      <workItem from="1629638423296" duration="23168000" />
+      <workItem from="1629678117455" duration="3799000" />
+      <workItem from="1629705161442" duration="9058000" />
+      <workItem from="1629815687886" duration="722000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-
   </component>
 </project>

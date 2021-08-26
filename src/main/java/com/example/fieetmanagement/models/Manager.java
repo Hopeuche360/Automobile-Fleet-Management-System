@@ -20,8 +20,6 @@ public class Manager extends Users{
     @Column(name = "manager_id", nullable = false)
     private Long id;
     private Double salary;
-    @OneToOne
-    private Branch branch;
     @CreationTimestamp
     private Date createdAt;
 }

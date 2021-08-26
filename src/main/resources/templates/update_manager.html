@@ -18,11 +18,7 @@
 <div class="w3-top">
     <div class="w3-bar w3-red w3-card w3-left-align w3-large">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
         <a th:href="@{/showNewManagersForm}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Managers</a>
-        <a th:href="@{/viewBranches}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Branches</a>
-        <a th:href="@{/viewVehicles}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Vehicles</a>
-        <a th:href="@{/login}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log out</a>
     </div>
 
 </div>
@@ -40,32 +36,33 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1 class="w3-xxlarge w3-text-red"><b>Managers Details</b></h1>
-            <hr style="width:75px;border:5px solid #f13131" class="w3-round">
-            <table id="t01">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Date Hired</th>
-                    <th>Email</th>
-                    <th>Salary</th>
-                    <th>Phone Number</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr th:each="manager : ${listManagers}">
-                    <td th:text="${manager.getName()}"></td>
-                    <td th:text="${manager.getCreatedAt()}"></td>
-                    <td th:text="${manager.getEmail()}"></td>
-                    <td th:text="${manager.getSalary()}"></td>
-                    <td th:text="${manager.getPhoneNumber()}"></td>
-                    <td><a th:href="@{/showFormForUpdate/{id}(id=${manager.getId()})}">Update</a></td>
-                    <td><a th:href="@{/deleteManager/{id}(id=${manager.getId()})}">Delete</a></td>
-                </tr>
-                </tbody>
+            <h1 class="w3-xlarge w3-text-red"><b>Managers Details</b></h1>
+            <hr style="width:75px;border:5px solid red" class="w3-round">
+            <form action="#" th:action="@{/saveNewManager}" th:object="${manager}"
+                  method="POST">
 
-            </table>
+                <!-- Add hidden form field to handle update -->
+                <input type="hidden" th:field="*{id}">
+                <input type="text" th:field="*{name}"
+                        class="form-control mb-4 col-4">
+
+                <input type="text" th:field="*{userRoles}"
+                       class="form-control mb-4 col-4" hidden>
+
+                <input type="text" th:field="*{email}"
+                        class="form-control mb-4 col-4">
+
+                <input type="number" th:field="*{phoneNumber}"
+                       class="form-control mb-4 col-4">
+
+                <input type="text" th:field="*{salary}"
+                        class="form-control mb-4 col-4">
+
+                <input type="password" th:field="*{password}"
+                       class="form-control mb-4 col-4">
+
+                <button type="submit" class="btn btn-info col-2">Update Manager</button>
+            </form>
         </div>
 
         <!--        <div class="w3-third w3-center">-->

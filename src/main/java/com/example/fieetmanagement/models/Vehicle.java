@@ -19,6 +19,7 @@ public class Vehicle {
     private Long id;
 
     private String brand;
+    private String model;
     private String color;
     private Double price;
     private String transmission;
@@ -30,6 +31,6 @@ public class Vehicle {
 
     private String vin;
     private Date createdAt;
-    @ManyToOne
-    private Branch branch;
+//    @ManyToOne
+//    private Branch branch;
 }

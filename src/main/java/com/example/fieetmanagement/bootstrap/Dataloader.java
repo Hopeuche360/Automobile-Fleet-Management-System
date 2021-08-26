@@ -2,9 +2,7 @@ package com.example.fieetmanagement.bootstrap;
 
 import com.example.fieetmanagement.enums.UserRoles;
 import com.example.fieetmanagement.models.Admin;
-import com.example.fieetmanagement.models.Customer;
-import com.example.fieetmanagement.models.Manager;
-import com.example.fieetmanagement.repositories.AdminLoginRepository;
+import com.example.fieetmanagement.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -12,11 +10,12 @@ import javax.annotation.PostConstruct;
 
 @Component
 public class Dataloader {
-//    @Autowired
-//    private AdminLoginRepository adminLoginRepository;
-//
-//    @PostConstruct
-//    public void createAdmin() {
+    @Autowired
+    private UserRepository userRepository;
+
+    //
+    @PostConstruct
+    public void createAdmin() {
 //        Manager manger = new Manager();
 //        manger.setEmail("manager@gmail.com");
 //        manger.setName("manager");
@@ -32,5 +31,14 @@ public class Dataloader {
 //        customer.setUserRoles(UserRoles.CUSTOMER);
 //        customer.setPassword("customer");
 //        adminLoginRepository.save(customer);
-//    }
+//
+//
+//        Admin admin = new Admin();
+//        admin.setUserRoles(UserRoles.ADMIN);
+//        admin.setPhoneNumber("09088865443");
+//        admin.setEmail("admin@gmail.com");
+//        admin.setName("Uche jane");
+//        admin.setPassword("admin");
+//        userRepository.save(admin);
+    }
 }

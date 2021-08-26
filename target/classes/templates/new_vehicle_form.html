@@ -18,11 +18,7 @@
 <div class="w3-top">
     <div class="w3-bar w3-red w3-card w3-left-align w3-large">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-        <a th:href="@{/showNewManagersForm}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Managers</a>
-        <a th:href="@{/viewBranches}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Branches</a>
-        <a th:href="@{/viewVehicles}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Vehicles</a>
-        <a th:href="@{/login}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log out</a>
+<!--                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Vehicles</a>-->
     </div>
 
 </div>
@@ -31,7 +27,7 @@
 <header class="w3-container w3-red w3-center" style="padding:10px 8px">
     <img src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F0x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349"
          alt="Logo" width="400px" height="200px" align="left">
-    <h1 class="w3-margin w3-jumbo">Thoros Automobile</h1>
+    <h2 class="w3-margin w3-jumbo">Thoros Automobile</h2>
     <p class="w3-xlarge">Good Cars For Good Moments</p>
     <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
 </header>
@@ -41,31 +37,35 @@
     <div class="w3-content">
         <div class="w3-twothird">
             <h1 class="w3-xxlarge w3-text-red"><b>Managers Details</b></h1>
-            <hr style="width:75px;border:5px solid #f13131" class="w3-round">
-            <table id="t01">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Date Hired</th>
-                    <th>Email</th>
-                    <th>Salary</th>
-                    <th>Phone Number</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr th:each="manager : ${listManagers}">
-                    <td th:text="${manager.getName()}"></td>
-                    <td th:text="${manager.getCreatedAt()}"></td>
-                    <td th:text="${manager.getEmail()}"></td>
-                    <td th:text="${manager.getSalary()}"></td>
-                    <td th:text="${manager.getPhoneNumber()}"></td>
-                    <td><a th:href="@{/showFormForUpdate/{id}(id=${manager.getId()})}">Update</a></td>
-                    <td><a th:href="@{/deleteManager/{id}(id=${manager.getId()})}">Delete</a></td>
-                </tr>
-                </tbody>
+            <hr style="width:75px;border:5px solid red" class="w3-round">
+            <form action="#" th:action="@{/saveNewVehicle}" th:object="${vehicle}"
+                  method="POST">
+                <input type="text" th:field="*{brand}"
+                       placeholder="Vehicle Brand" class="form-control mb-4 col-4">
 
-            </table>
+                <input type="text" th:field="*{model}"
+                       placeholder="vehicle Model" class="form-control mb-4 col-4">
+
+                <input type="text" th:field="*{color}"
+                       placeholder="Vehicle color" class="form-control mb-4 col-4">
+
+                <input type="number" th:field="*{price}"
+                       placeholder="Vehicle Price" class="form-control mb-4 col-4">
+
+                <input type="text" th:field="*{transmission}"
+                       placeholder="Vehicle Transmission" class="form-control mb-4 col-4">
+
+                <input type="text" th:field="*{vehicleType}"
+                       placeholder="Vehicle Type" class="form-control mb-4 col-4">
+
+                <input type="number" th:field="*{vin}"
+                       placeholder="Vehicle vin" class="form-control mb-4 col-4">
+
+                <input type="text" th:field="*{mileage}"
+                       placeholder="Vehicle mileage" class="form-control mb-4 col-4">
+
+                <button type="submit" class="btn btn-info col-2">Add Vehicle</button>
+            </form>
         </div>
 
         <!--        <div class="w3-third w3-center">-->
@@ -77,7 +77,7 @@
 
 
 <div class="w3-container w3-red w3-center w3-padding-2">
-    <h1 class="w3-margin w3-xlarge">Quote of the day::: Be Happy with the best ride</h1>
+    <h3 class="w3-margin w3-xlarge">Quote of the day::: Be Happy with the best ride</h3>
 </div>
 
 <!-- Footer -->
